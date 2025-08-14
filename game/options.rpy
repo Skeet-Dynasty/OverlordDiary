@@ -121,7 +121,7 @@ define config.window_hide_transition = Dissolve(.2)
 ## в то время как любая другая цифра — это количество символов, печатаемых в
 ## секунду.
 
-default preferences.text_cps = 0
+default preferences.text_cps = 75
 
 
 ## Стандартная задержка авточтения. Большие значения означают долгие ожидания,
@@ -144,7 +144,7 @@ default preferences.afm_time = 15
 ## Этот параметр обычно не должен изменяться, а если и изменился, должен быть
 ## текстовой строчкой, а не выражением.
 
-define config.save_directory = "OverlordAdventures-1755181495"
+define config.save_directory = None
 
 
 ## Иконка ######################################################################
