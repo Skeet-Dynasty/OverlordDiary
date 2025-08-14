@@ -11,6 +11,7 @@
 /game/**/*.bak
 /game/**/*.new
 /game/**/*.old
+/game/.vscode/*.json
 
 # Error, log, and output files.
 /errors.txt
