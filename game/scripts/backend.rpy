@@ -57,12 +57,12 @@ init -999 python:
                         renpy.image(
                             file_name,
                             ConditionSwitch(
-                                "d_uncolorize=='lite'",
+                                "kdone_uncolorize=='lite'",
                                 im.MatrixColor(
                                     im.Composite((1920,1080), (0,0), file),
                                     im.matrix.saturation(.5, desat = (0.2126, 0.7152, 0.0722))
                                 ),
-                                "d_uncolorize=='full'",
+                                "kdone_uncolorize=='full'",
                                 im.MatrixColor(
                                     im.Composite((1920,1080), (0,0), file),
                                     im.matrix.saturation(.2, desat = (0.2126, 0.7152, 0.0722))

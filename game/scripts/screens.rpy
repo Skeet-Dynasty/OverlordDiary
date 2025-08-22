@@ -268,26 +268,28 @@ screen main_menu():
     ## заменять этот.
     tag menu
 
-    add gui.main_menu_background
+    #add "source/images/ifone.png":
+    #    align(0.05, 0.6)
 
     ## Эта пустая рамка затеняет главное меню.
-    frame:
-        style "main_menu_frame"
+    #frame:
+    #    style "main_menu_frame"
 
     ## Оператор use включает отображение другого экрана в данном. Актуальное
     ## содержание главного меню находится на экране навигации.
-    use navigation
+    #use navigation
 
-    if gui.show_name:
 
-        vbox:
-            style "main_menu_vbox"
+    textbutton _("Сойти с ума") text_color "#FFFFFF" align(0.075, 0.375) at main_menu_fade_anim action Start()
 
-            text "[config.name!t]":
-                style "main_menu_title"
+    textbutton _("Вспомнить") text_color "#FFFFFF" align(0.075, 0.45) at main_menu_fade_anim action ShowMenu("load")
 
-            text "[config.version]":
-                style "main_menu_version"
+    textbutton _("Настройки\nХакинтоша") text_color "#FFFFFF" align(0.075, 0.565) at main_menu_fade_anim action ShowMenu("preferences")
+
+    textbutton _("Об игре") text_color "#FFFFFF" align(0.075, 0.65) at main_menu_fade_anim action ShowMenu("about")
+
+    textbutton _("Сбежать\nв дурку") text_color "#FFFFFF" align(0.075, 0.75) at main_menu_fade_anim action Quit(confirm=not main_menu)
+
 
 
 style main_menu_frame is empty
