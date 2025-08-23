@@ -40,3 +40,19 @@ init:
 
     transform null_scr:
         pause 0.01
+    
+    # Для спрайтов
+    transform left:
+        xalign 0.45
+        xanchor 0.5
+        yanchor 0.0
+
+    transform right:
+        xalign 1.1
+        xanchor 0.5
+        yanchor 0.0
+    
+    transform center:
+        xalign 0.5
+        xanchor 0.5
+        yanchor 0.0
