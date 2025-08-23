@@ -662,6 +662,12 @@ screen preferences():
                         textbutton _("Оконный") action Preference("display", "window")
                         textbutton _("Полный") action Preference("display", "fullscreen")
 
+                    vbox:
+                        style_prefix "check"
+                        label _("Discord RPC")
+                        textbutton _("Включить") action SetVariable("persistent.rpc_mode", True)
+                        textbutton _("Отключить") action SetVariable("persistent.rpc_mode", False)
+
                 vbox:
                     style_prefix "check"
                     label _("Пропуск")

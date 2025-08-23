@@ -6,10 +6,12 @@
     jump kdone_carter_prologue
 
 label splashscreen:
+    $ rpc_update("В игре", "Смотрит заставку", "logogovna")
     $ renpy.movie_cutscene("source/videosos/zastavka.ogv")
     return
 
 label main_menu:
+    $ rpc_update("В игре", "В главном меню", "logogovna")
     play music ne_lubov fadein 4
     scene kdone_menu
     with Fade(1.5, 1.2, 1.0)

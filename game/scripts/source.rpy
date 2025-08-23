@@ -17,6 +17,26 @@ init python:
     reg_char("sveta", "Света", "#ff9191")
     reg_char("maman", 'Маман', "#006eff")
     reg_char("nvlbazar", 'NVL', "#ff9191")
-
+    reg_char("eva", "Ева", "#ff0000")
 init:
     image kdone_menu = Movie(fps=60, size = (1920, 1080), play="source/videosos/kdone_menu.ogv")
+
+    image unblink:
+        contains:
+            "source/images/anim/blink_up.png"
+            xalign 0 yalign 0
+            ease 1.5 pos (0,-1080)
+        contains:
+            "source/images/anim/blink_down.png"
+            xalign 0 yalign 0
+            ease 1.5 pos (0,1080)
+
+    image blink:
+        contains:
+            "source/images/anim/blink_up.png"
+            pos (0,-1080)
+            ease 1.5 xalign 0 yalign 0
+        contains:
+            "source/images/anim/blink_down.png"
+            pos (0,1080)
+            ease 1.5 xalign 0 yalign 0
