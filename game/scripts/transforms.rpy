@@ -3,6 +3,10 @@
 # since 2025
 
 init:
+
+    transform send_mesto_hands(x, y, z):
+        xpos x ypos y zoom z
+
     transform load_anim: # АНИМАЦИЯ МЕНЮ ЗАГРУЗКИ
         zoom 0.4 alpha 0
         ease 0.5 zoom 1.0 alpha 1
