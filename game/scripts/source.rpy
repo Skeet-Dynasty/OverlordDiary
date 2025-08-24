@@ -21,6 +21,10 @@ init python:
 init:
     image kdone_menu = Movie(fps=60, size = (1920, 1080), play="source/videosos/kdone_menu.ogv")
 
+    define lap = ImageDissolve("source/images/anim/transition/lap.webp", 2.0) # ЭФФЕКТ ЧАСОВ
+    define night_dis = ImageDissolve("source/images/anim/transition/night_dis.webp", 5.0) # ЭФФЕКТ СГОРАЮЩЕЙ БУМАГИ
+    define paint = ImageDissolve("source/images/anim/transition/paint.webp", 1.5)
+
     image unblink:
         contains:
             "source/images/anim/blink_up.png"

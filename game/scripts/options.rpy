@@ -16,32 +16,15 @@ define config.has_voice = True
 
 ## Вход и выход в игровое меню.
 
-define config.enter_transition = dissolve
-define config.exit_transition = dissolve
-
-
-## Переход между экранами игрового меню.
-
-define config.intra_transition = dissolve
-
-
-## Переход, используемый после загрузки слота сохранения.
-
-define config.after_load_transition = None
-
-
-## Используется при входе в главное меню после того, как игра закончится.
-
-define config.end_game_transition = None
-
-
-define config.window = "auto"
-
-
-## Переходы, используемые при показе и скрытии диалогового окна
-
+define config.enter_transition = ImageDissolve("source/images/anim/transition/wipeleft.webp", 0.5, ramplen=64)
+define config.exit_transition = ImageDissolve("source/images/anim/transition/wipeleft.webp", 0.5, ramplen=64)
+define config.intra_transition = ImageDissolve("source/images/anim/transition/wipeleft.webp", 0.5, ramplen=64)
+define config.after_load_transition = MultipleTransition([False, ImageDissolve("source/images/anim/transition/wipeleft.webp", 0.5, ramplen=64), Solid("#000"), Pause(0.25), Solid("#000"), ImageDissolve("source/images/anim/transition/wipeleft.webp", 0.5, ramplen=64), True])
+define config.end_game_transition = Fade(1.5, 1, 2)
 define config.window_show_transition = Dissolve(.2)
 define config.window_hide_transition = Dissolve(.2)
+
+define config.window = "auto"
 
 
 default preferences.text_cps = 75
