@@ -1,3 +1,8 @@
+# КАЛ ПОД КАПОТОМ
+# MADE BY @b3rg3n
+# Since 2025 (c)
+# Skeet Dynasty
+
 init -999 python:
 
     from os import path
@@ -102,6 +107,9 @@ init python:
     
     def kdone_hlclear():
         _history_list = []
+
+    def kdone_newitem_uved(item):
+        renpy.notify(f"Получен новый предмет! {item.name} в количестве {item.count} штук")
 
 
 init python:
