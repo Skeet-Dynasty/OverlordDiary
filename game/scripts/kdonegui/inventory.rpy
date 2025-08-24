@@ -39,6 +39,15 @@ init python:
     kdone_bag_vernuli = False # ПЕРЕМЕННАЯ ВОЗВРАТА САНИТАРАМИ СУМКИ С МОБИЛОЙ
     kdone_invent_dostup = False # ПЕРЕМЕННАЯ ДОСТУПНОСТИ ИНВЕНТАРЯ (НЕ СРАЗУ ЖЕ ДАВАТЬ БЛЯДЬ)
 
+    def take_alo():
+        renpy.notify("Пока в разработке...")
+
+    def try_smoke():
+        renpy.notify("Пока в разработке...")
+
+    def check_fimoz():
+        renpy.notify("Пока в разработке...")
+
 screen kdone_inventory():
     tag menu
     modal True
